@@ -76,3 +76,9 @@ spring.datasource.password=changemeinprod!
 ```
 
 > Change the password before deploying anywhere.
+
+ ## Contact
+
+Built with ❤ by [Aradhya Gupta](https://github.com/aradhyagupta25/)
+
+***
