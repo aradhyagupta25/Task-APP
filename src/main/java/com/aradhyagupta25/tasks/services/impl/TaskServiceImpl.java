@@ -37,7 +37,7 @@ public class TaskServiceImpl implements TaskService {
         if(null != task.getId()){
             throw new IllegalArgumentException("Task already has an ID!");
         }
-        if(null != task.getTitle() || task.getTitle().isBlank()){
+        if(null == task.getTitle() || task.getTitle().isBlank()){
             throw new IllegalArgumentException("Task must have a title!");
         }
         TaskPriority taskPriority = Optional.ofNullable(task.getPriority()).orElse(TaskPriority.MEDIUM);

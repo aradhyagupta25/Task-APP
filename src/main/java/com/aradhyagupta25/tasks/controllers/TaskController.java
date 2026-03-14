@@ -49,7 +49,7 @@ public class TaskController {
         return taskService.getTask(taskListId, taskId).map(taskMapper::toDto);
     }
 
-    @GetMapping(path = "/{task_id}")
+    @PutMapping(path = "/{task_id}")
     public TaskDto updateTask(
             @PathVariable("task_list_id") UUID taskListId,
             @PathVariable("task_id") UUID taskId,
