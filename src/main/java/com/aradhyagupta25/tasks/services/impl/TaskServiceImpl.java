@@ -8,6 +8,7 @@ import com.aradhyagupta25.tasks.repositories.TaskListRepository;
 import com.aradhyagupta25.tasks.repositories.TaskRepository;
 import com.aradhyagupta25.tasks.services.TaskService;
 import jakarta.transaction.Transactional;
+import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.GetMapping;
 
 import java.time.LocalDateTime;
@@ -15,7 +16,7 @@ import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
 import java.util.UUID;
-
+@Service
 public class TaskServiceImpl implements TaskService {
 
     private final TaskRepository taskRepository;

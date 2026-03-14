@@ -4,6 +4,7 @@ import com.aradhyagupta25.tasks.domain.dto.TaskDto;
 import com.aradhyagupta25.tasks.domain.entities.Task;
 import com.aradhyagupta25.tasks.mappers.TaskMapper;
 import com.aradhyagupta25.tasks.services.TaskService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -16,6 +17,7 @@ public class TaskController {
 
     private final TaskService taskService;
     private final TaskMapper taskMapper;
+
     public TaskController(TaskService taskService, TaskMapper taskMapper) {
         this.taskService = taskService;
         this.taskMapper = taskMapper;

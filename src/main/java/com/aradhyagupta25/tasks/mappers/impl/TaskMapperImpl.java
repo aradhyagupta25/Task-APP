@@ -5,6 +5,8 @@ import com.aradhyagupta25.tasks.domain.entities.Task;
 import com.aradhyagupta25.tasks.mappers.TaskMapper;
 import org.springframework.stereotype.Component;
 
+import java.time.LocalDateTime;
+
 @Component      // marked it as a bean for injection.
 public class TaskMapperImpl implements TaskMapper {
     @Override
@@ -16,7 +18,7 @@ public class TaskMapperImpl implements TaskMapper {
                 taskDto.dueDate(),
                 taskDto.status(),
                 taskDto.priority(),
-                null,
+                (LocalDateTime) null,
                 null,
                 null
         );
