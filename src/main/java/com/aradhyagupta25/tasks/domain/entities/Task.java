@@ -55,8 +55,6 @@ public class Task {
         this.updated = updated;
     }
 
-    public Task(UUID id, String title, String description, LocalDateTime dueDate, TaskStatus taskStatus, TaskPriority taskPriority, TaskList taskList, LocalDateTime now, LocalDateTime now1) {
-    }
 
     public UUID getId() {
         return id;

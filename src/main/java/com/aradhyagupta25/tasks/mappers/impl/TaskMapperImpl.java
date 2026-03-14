@@ -11,17 +11,14 @@ import java.time.LocalDateTime;
 public class TaskMapperImpl implements TaskMapper {
     @Override
     public Task fromDto(TaskDto taskDto) {
-        return new Task(
-                taskDto.id(),
-                taskDto.title(),
-                taskDto.description(),
-                taskDto.dueDate(),
-                taskDto.status(),
-                taskDto.priority(),
-                (LocalDateTime) null,
-                null,
-                null
-        );
+        Task task = new Task();
+        task.setId(taskDto.id());
+        task.setTitle(taskDto.title());
+        task.setDescription(taskDto.description());
+        task.setDueDate(taskDto.dueDate());
+        task.setStatus(taskDto.status());
+        task.setPriority(taskDto.priority());
+        return task;
     }
 
     @Override

@@ -56,9 +56,9 @@ public class TaskServiceImpl implements TaskService {
                 task.getDueDate(),
                 taskStatus,
                 taskPriority,
-                taskList,
-                now,
-                now
+                now,        // created ← moved here
+                taskList,   // taskList ← moved here
+                now         // updated
         );
 
         return taskRepository.save(taskToSave);
