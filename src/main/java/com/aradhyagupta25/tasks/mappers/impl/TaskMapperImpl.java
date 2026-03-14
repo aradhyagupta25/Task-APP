@@ -14,7 +14,7 @@ public class TaskMapperImpl implements TaskMapper {
         return new Task(
                 taskDto.id(),
                 taskDto.title(),
-                taskDto.descriptio(),
+                taskDto.description(),
                 taskDto.dueDate(),
                 taskDto.status(),
                 taskDto.priority(),

@@ -9,7 +9,7 @@ import java.util.UUID;
 public record TaskDto(      // java records automatically provides constructors, getters, equals, hashcode, two string and immutability.
         UUID id,
         String title,
-        String descriptio,
+        String description,
         LocalDateTime dueDate,
         TaskPriority priority,
         TaskStatus status
